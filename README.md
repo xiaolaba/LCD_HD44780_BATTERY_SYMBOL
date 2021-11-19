@@ -10,7 +10,7 @@ Read This
 http://wp.me/ph3BR-1ZJ
 
  
-xiaolaba_LCM_battery_symbols.jpg
+![HD44780_LCM_battery_symbols/xiaolaba_LCM_battery_symbols.jpg](HD44780_LCM_battery_symbols/xiaolaba_LCM_battery_symbols.jpg)
  
 
 The HD44780 LCM or compatible, contain 8 RAM locations for custom symbols to be build or display.
@@ -35,7 +35,7 @@ HD44780 customer char battery gauge.JPG
 example of code to define two battery symbols, one is 13% charge, the other is 88% charge, why 13% of each step ?
 
 100% / 8 step, = 12% / step = around 13%, that is,
-
+```
 byte bat_13%[8] = { 0xe, 0x11, 0x11, 0x11, 0x11, 0x11, 0x11, 0x1f};
  
 byte bat_13%[8] = {
@@ -63,7 +63,7 @@ byte bat_88%[8] = {
 0b11111 //0x1f
 0b11111 //0x1f
 };
-
+```
  
 
  
